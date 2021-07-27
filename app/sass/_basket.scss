@@ -1,0 +1,30 @@
+.basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    &__triangle {
+        display: block;
+        border: 10px solid transparent; 
+        border-right: 15px solid $accent;
+        margin-left: 10px;
+    }
+    &__arrow{
+        display: block;
+        background: $accent;
+        font-weight: bold;
+        color: $white;
+        padding: 0 13px;
+        
+    }
+}
+@media (max-width: 767px) {
+    .basket {
+        &__triangle {
+            display: none;
+        }
+        &__arrow{  
+            display: none;
+        }
+    }
+}

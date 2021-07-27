@@ -1,0 +1,43 @@
+.slide-img {
+    position: relative;
+    &__oldprice {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-decoration-line: line-through;
+        text-transform: uppercase;
+    }
+    &__price {
+        position: absolute;
+        top: 90px;
+        right: 10px;
+        font-weight: bold;
+        font-size: 42px;
+        text-align: right;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $red;
+    }
+    &__img {
+        max-width: 500px;
+    }
+}
+@media (max-width: 991px) {
+    .slide-img {
+        &__img {
+            max-width: 450px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .slide-img {
+        &__img {
+            max-width: 400px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.information-deliveri {
+    padding: 70px 0;
+    background-color: $black;
+    margin-bottom: 50px;
+    &__h1 {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $white;
+        margin-bottom: 23px;
+    }
+    &__p {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 26px;
+        text-align: center;
+        color: $gree;
+    }
+}

@@ -1,0 +1,51 @@
+.selection {
+    background-color: $akva;
+    border-radius: 10px;
+	&__choice { 
+        display: flex;
+        justify-content: space-between;
+    }
+	&__h3 { 
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        margin-bottom: 15px;
+    }
+	&__p { 
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+	&__btn { 
+        display: flex;
+        align-items: center;
+        background: $accent;
+        border: $accent;
+        padding: 7px 30px;
+        cursor: pointer;
+        stroke: $white;
+        transform: rotate(180deg);
+        border: 3px solid $white;
+        &:hover {
+            border: 3px solid $accent;
+        }
+    }
+	&__sex { 
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .selection {
+        &__choice {
+            display: block;
+        }
+    }
+}

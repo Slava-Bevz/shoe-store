@@ -1,0 +1,30 @@
+.basket-mein {
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    &__li {
+        padding: 10px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: $black;
+        white-space: nowrap;
+        &:hover {
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .basket-mein {
+        display: none;
+    }
+}
